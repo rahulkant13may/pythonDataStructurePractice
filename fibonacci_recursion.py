@@ -2,7 +2,7 @@ def fibonacci(n):
 	if n < 0:
 		print("Negative no not allowed")
 
-	if n == 0 or n == 1:
+	elif n == 0 or n == 1:
 		return n
 
 	else:

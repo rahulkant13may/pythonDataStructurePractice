@@ -1,0 +1,211 @@
+16/11/17
+
+1) BFS - QUEUE ( Theory )
+
+Links visited:
+
+http://www.geeksforgeeks.org/applications-of-breadth-first-traversal/
+
+http://practice.geeksforgeeks.org/problems/find-the-number-of-islands/1
+
+key points:
+
+1) In undirected graphs, either Breadth First Search or Depth First Search can be used to detect cycle. In directed graph, only depth first search can be used.
+
+Other Stuff:
+
+http://www.geeksforgeeks.org/must-coding-questions-company-wise/
+
+http://www.geeksforgeeks.org/introduction-compiler-design/
+
+Yield , Generator function python
+
+17/11/17
+
+1) BFS
+
+Links visited:
+
+https://www.hackerearth.com/practice/algorithms/graphs/breadth-first-search/tutorial/
+
+key points:
+
+i) 0-1 BFS
+
+This type of BFS is used to find the shortest distance between two nodes in a graph provided that the edges in the graph have the weights 0 or 1
+
+23/11/17
+
+1) DFS - STACK ( Theory )
+
+Links visited:
+
+http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/
+
+http://ww3.algorithmdesign.net/handouts/DFS.pdf
+
+http://ww3.algorithmdesign.net/handouts/DFS.pdf
+
+key points:
+
+27/11/17
+
+1) Binary Search ( Theory )
+
+Links visited:
+
+http://www.geeksforgeeks.org/binary-search/
+
+key points:
+
+- on sorted array
+- time complexity O(Logn)
+
+2) Quick Sort ( Theory )  NOT COMPLETED
+
+Links visited:
+
+http://www.geeksforgeeks.org/quick-sort/
+
+key points:
+
+Divide and Conquer algorithm
+
+28/11/17
+
+1) Dijkstra’s shortest path algorithm ( Theory )
+
+key points:
+
+Shortest path from source to all vertices
+
+Greedy Algorithm
+
+2) Prims Minimum Spanning Tree Algorithm ( Theory )
+
+Links visited:
+
+Tushar Roy Youtube
+
+key points:
+
+Min Heap or Prority Queue
+
+Fibonacci heap, this is a variation of binary heap
+
+Greedy Algorithm
+
+29/11/17
+
+1) Binary Heap ( Theory )
+
+Links visited:
+
+https://www.cs.cmu.edu/~adamchik/15-121/lectures/Binary%20Heaps/heaps.html
+
+https://www.tutorialspoint.com/design_and_analysis_of_algorithms/design_and_analysis_of_algorithms_binary_heap.htm
+
+https://www.programiz.com/dsa/heap-sort    Good one
+
+key points:
+
+- Since a heap is a complete binary tree, it has a smallest possible height - a heap with N nodes always has O(log N) height.
+- A heap is useful data structure when you need to remove the object with the highest (or lowest) priority. A common use of a heap is to implement a priority queue
+- HEAP SORT has O(nlogn) time complexity  for  all the cases ( best case, average case and worst case).
+
+How to build the heap?
+Heapify procedure can be applied to a node only if its children nodes are heapified. So the heapification must be performed in the bottom up order
+
+Insert
+The worst-case runtime of the algorithm is O(log n), since we need at most one swap on each level of a heap on the path from the inserted node to the root.
+
+DeleteMin
+The minimum element can be found at the root, which is the first element of the array. We remove the root and replace it with the last element of the heap and then restore the heap property by percolating down. Similar to insertion, the worst-case runtime is O(log n).
+
+04/12/17
+
+1) Find Minimum Depth of Binary Tree ( Theory )  =>  Python Code
+
+Links visited:
+
+http://www.geeksforgeeks.org/find-minimum-depth-of-a-binary-tree/
+
+05/12/17
+
+1) Diameter of Binary Tree =>  Python Code
+2) Level Order Traversal Binary Tree =>  Python Code
+
+Links visited:
+
+http://www.geeksforgeeks.org/level-order-tree-traversal/
+http://www.geeksforgeeks.org/diameter-of-a-binary-tree/
+
+3) DFS Vs BFS
+
+The most important points is:-
+
+- BFS starts visiting nodes from root while DFS starts visiting nodes from leaves.
+- So if our problem is to search something that is more likely to closer to root, we would prefer BFS. And if the target node is close to a leaf, we would prefer DFS.
+
+Mirror Tree   NOT COMPLETED
+SUDOKU  NOT COMPLETED
+
+06/12/17
+
+DYNAMIC PROBLEM BASIC / BACKTRACKING
+
+Links visited:
+
+https://www.quora.com/Are-there-any-good-resources-or-tutorials-for-dynamic-programming-DP-besides-the-TopCoder-tutorial/answer/Michal-Danil%C3%A1k?share=1&srid=3OBi   GOOD ONE
+
+07/12/17
+
+SQL NOT COMPLETED
+TOP 20 DP Problem  NOT COMPLETED
+STACK vs HEAP Memory (what is String pool ?)  NOT COMPLETED
+Fibonacci Recursion =>  Python Code
+Fibonacci DP =>  Python Code
+
+Links visited:
+
+http://www.geeksforgeeks.org/sql-tutorial/
+
+http://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
+
+http://reactkungfu.com/2015/08/pros-and-cons-of-using-immutability-with-react-js/
+
+https://www.youtube.com/watch?v=_8-ht2AKyH4     HEAP, STACK memory
+
+https://stackoverflow.com/questions/1863515/pros-cons-of-immutability-vs-mutability   Mutable vs Immutable
+
+http://www.geeksforgeeks.org/dynamic-programming-set-6-min-cost-path/   MIN COST PATH , PYTHON CODE
+
+11/12/17
+
+Links visited
+
+http://www.geeksforgeeks.org/find-the-minimum-cost-to-reach-a-destination-where-every-station-is-connected-in-one-direction/   python code on matrix , DP
+
+12/12/17
+
+Links visited
+
+http://www.geeksforgeeks.org/dynamic-programming-set-6-min-cost-path/  =>  PYTHON CODE DP
+
+http://www.geeksforgeeks.org/longest-increasing-path-matrix/  => PYTHON CODE DP
+
+http://www.geeksforgeeks.org/unique-paths-in-a-grid-with-obstacles/   => PYTHON CODE DP
+
+http://www.geeksforgeeks.org/gold-mine-problem/    TO DO
+
+13/12/17
+
+Links visited
+
+http://www.geeksforgeeks.org/dynamic-programming/
+
+20/12/17
+
+Links visited
+
+http://www.geeksforgeeks.org/find-the-longest-path-in-a-matrix-with-given-constraints/  => PYTHON CODE DP

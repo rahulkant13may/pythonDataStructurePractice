@@ -12,7 +12,7 @@
 
 def cutRod(price_array, dp):
 	for row in range(1, len(price_array) + 1):
-		for col in range(1, len(price_array) + 1):
+		for col in range(1, len(price_array) + 2):
 			if row == 1:
 				dp[row][col] = (col) * price_array[0]
 			if col == 1:
@@ -26,10 +26,10 @@ def cutRod(price_array, dp):
 		print(row)
 
 if __name__ == "__main__":
-	# price_array = [2, 5, 7, 8]
-	price_array = [3, 5, 8, 9, 10, 17, 17, 20]
+	price_array = [2, 5, 7, 8]
+	# price_array = [3, 5, 8, 9, 10, 17, 17, 20]
 
-	dp = [[0 for col in range(0, len(price_array ) + 1)] for row in range(0,len(price_array) + 1)]
+	dp = [[0 for col in range(0, len(price_array ) + 2)] for row in range(0,len(price_array) + 1)]
 	print(dp)
 	cutRod(price_array, dp)
 

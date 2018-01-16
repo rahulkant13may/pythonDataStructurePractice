@@ -202,10 +202,30 @@ http://www.geeksforgeeks.org/gold-mine-problem/    TO DO
 
 Links visited
 
-http://www.geeksforgeeks.org/dynamic-programming/
+ http://www.geeksforgeeks.org/dynamic-programming/   All Dynamic problems
 
 20/12/17
 
 Links visited
 
 http://www.geeksforgeeks.org/find-the-longest-path-in-a-matrix-with-given-constraints/  => PYTHON CODE DP
+
+08/1/18
+
+Links visited
+
+0-1 knapsack        (16/1 )
+
+https://www.geeksforgeeks.org/knapsack-problem/  => PYTHON CODE DP
+
+11/1/18
+
+Links visited
+
+Subset Sum Problem       (16/1 )
+https://www.geeksforgeeks.org/dynamic-programming-subset-sum-problem/  => PYTHON CODE DP
+
+16/1/18
+
+Revision : LCS (16/1)
+Revision : Edit Distance  (16/1)

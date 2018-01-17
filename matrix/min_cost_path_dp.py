@@ -20,6 +20,9 @@ def minCostPath(cost, rowDest, colDest):
 		for col in range(1, C):
 			minCostMatrixTable[row][col] = min(minCostMatrixTable[row -1][col], minCostMatrixTable[row][col -1], minCostMatrixTable[row -1][col -1]) + cost[row][col]
 
+	for row in minCostMatrixTable:
+		print(row)
+
 	return minCostMatrixTable[rowDest][colDest]
 
 # Driver program to test above functions
@@ -27,3 +30,9 @@ cost = [[1, 2, 3],
         [4, 8, 2],
         [1, 5, 3]]
 print(minCostPath(cost, 2, 2))
+
+# minCostMatrixTable
+
+# [1, 3, 6]
+# [5, 9, 5]
+# [6, 10, 8]

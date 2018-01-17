@@ -10,27 +10,32 @@
 
 # (8) 4	0	2	5	7	10	12
 
-def cutRod(price_array, dp):
-	for row in range(1, len(price_array) + 1):
-		for col in range(1, len(price_array) + 1):
+# Ques: Given a length of rod and price of different pieces of rod , then how you will cut the rod to maximize the profit
+
+def cutRod(price_array, length, dp):
+	for row in range(0, len(price_array) + 1):
+		for col in range(length + 1):
 			if row == 1:
 				dp[row][col] = (col) * price_array[0]
-			if col == 1:
+			elif col == 1 and row > 0:
 				dp[row][col] = price_array[0]
-			if row > col:
+			elif row > col:
 				dp[row][col] = dp[row - 1][col]
-			else:
+			elif row > 1 and col > 1 and row <=  col:
 				dp[row][col] = max(dp[row -1 ][col], dp[row][col - row] + price_array[row - 1]  )
 
 	for row in dp:
 		print(row)
 
 if __name__ == "__main__":
-	# price_array = [2, 5, 7, 8]
-	price_array = [3, 5, 8, 9, 10, 17, 17, 20]
+	price_array = [2, 5, 7, 8]
+	length = 5
 
-	dp = [[0 for col in range(0, len(price_array ) + 1)] for row in range(0,len(price_array) + 1)]
-	print(dp)
-	cutRod(price_array, dp)
+	dp = [[0 for col in range(length + 1)] for row in range(0,len(price_array) + 1)]
+	cutRod(price_array, length, dp)
+
+
+
+
 
 

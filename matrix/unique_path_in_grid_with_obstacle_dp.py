@@ -6,11 +6,11 @@ def uniquePathsWithObstacles(A):
         paths[0][0] = 1
 
     for col in range(1, len(A[0])):
-        if A[0][col] == 0:
+        if A[0][col] == 0 and A[0][col - 1] == 0:
             paths[0][col] = 1
 
     for row in range(1, len(A[0])):
-        if A[row][0] == 0:
+        if A[row][0] == 0 and A[row -1][0] == 0:
             paths[row][0] = 1
 
     # adding total paths from top and left
@@ -18,6 +18,9 @@ def uniquePathsWithObstacles(A):
         for col in range(1, len(A[0])):
             if A[row][col] == 0:
                 paths[row][col] = paths[row -1][col] + paths[row][col - 1]
+
+    for row in paths:
+        print(row)
 
     # return corner value
     return paths[-1][-1]

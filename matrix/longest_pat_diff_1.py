@@ -37,6 +37,8 @@ def LongestPath(cost):
 			dp[row][col] = findLongestPathFromCell(row, col, cost, dp)
 			result = max(result, dp[row][col])
 	# print(dp)
+	for row in dp:
+		print(row)
 	print(result)
 
 
@@ -47,3 +49,9 @@ if __name__ == "__main__":
             [4, 6, 7 ]]
 
     LongestPath(cost)
+
+# dp
+
+# [3, 2, 1]
+# [1, 1, 2]
+# [2, 4, 3]

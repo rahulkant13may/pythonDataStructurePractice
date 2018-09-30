@@ -23,9 +23,9 @@ def knapSack(W, wt, val, n ):
 
 
 # Driver program to test above function
-val = [1, 4, 5, 7]
-wt = [1, 3, 4, 5]
-W = 7
+val = [4, 2]
+wt = [2, 1]
+W = 5
 
 # val = [60, 100, 120]
 # wt = [10, 20, 30]

@@ -28,7 +28,7 @@ def cutRod(price_array, length, dp):
 		print(row)
 
 if __name__ == "__main__":
-	price_array = [2, 5, 7, 8]
+	price_array = [1,2]
 	length = 5
 
 	dp = [[0 for col in range(length + 1)] for row in range(0,len(price_array) + 1)]
